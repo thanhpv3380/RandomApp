@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import './SelectRoom.css';
+import Facebook from '../Facebook/Facebook';
 class SelectRoom extends Component {
     constructor(){
         super();
         this.state = {
             roomName: '',
             errorName: false
-        }
-        
+        }      
     }
     handleChange = (e) => {
         //console.log(e);
@@ -52,7 +52,6 @@ class SelectRoom extends Component {
                                 :
                                     ''
                             }
-                            
                             <form >
                                 <div className="form-group form-inline">
                                     <input 
@@ -69,6 +68,7 @@ class SelectRoom extends Component {
                                     <a href="#">+ Create Room</a>
                                 </div>    */}
                             </form>
+                            <Facebook />
                         </div>
                     </div>
                 </div>
