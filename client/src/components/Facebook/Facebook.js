@@ -9,6 +9,7 @@ class Facebook extends Component{
         picture: ''
     }
     responseFacebook = (res) =>{
+        console.log(res);
         this.setState({
             name: res.name,
             userID: res.userID,
