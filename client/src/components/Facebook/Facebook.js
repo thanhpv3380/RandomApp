@@ -31,7 +31,7 @@ class Facebook extends Component{
             );
         } else {
             fbContent = (<FacebookLogin
-                appId="201915481225991"
+                appId="147086596627072"
                 fields="name,email,picture"
                 onClick={this.componentClicked}
                 callback={this.responseFacebook} />);
